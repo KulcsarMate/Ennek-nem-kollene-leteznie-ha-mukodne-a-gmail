@@ -1,0 +1,107 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for input elements */
+input[type="number"] {
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+    width: 80px;
+}
+
+input[type="button"] {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the box container where the table will be displayed */
+#box {
+    margin-top: 30px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for table cells (blocks and empty spaces) */
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f2f2f2;
+}
+
+/* Block styling */
+td:not(.empty) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Empty space styling */
+td.empty {
+    background-color: #e0e0e0;
+}
+
+/* Hover effect for blocks */
+td:hover {
+    background-color: #45a049;
+}
+
+/* Active cell effect (clicked block) */
+td.clicked {
+    background-color: #388E3C;
+    color: #fff;
+}
+
+/* Game completed state */
+.game-completed td {
+    background-color: #2196F3;
+    color: white;
+    font-size: 18px;
+}
+
+/* Optional: Style for alert message */
+.alert-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    font-size: 18px;
+    display: none;
+}
