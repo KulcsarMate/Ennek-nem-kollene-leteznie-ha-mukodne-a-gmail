@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: bisque;
+}
+
+.winner{
+    background-color: red;
+    color: aqua;
+}
